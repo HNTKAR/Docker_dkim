@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+mkdir /etc/opendkim/keys/server_name
+opendkim-genkey -D /etc/opendkim/keys/server_name -d server_name -s dkim_selector
+tail -f /dev/null

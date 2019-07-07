@@ -1,0 +1,10 @@
+version: '2'
+services:
+  mail_img:
+    build: .
+    volumes:
+      - /etc/opendkim/keys/:/etc/opendkim/keys/
+    image: dkim
+    container_name: dkim
+
+
